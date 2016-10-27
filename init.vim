@@ -51,4 +51,4 @@ exe 'source ' . s:path . '/custom/plugins/nerdcommenter.vim'
 exe 'source ' . s:path . '/custom/plugins/fugitive.vim'
 exe 'source ' . s:path . '/custom/plugins/syntastic.vim'
 exe 'source ' . s:path . '/custom/strip-whitespaces.vim'
-
+exe 'source ' . s:path . '/custom/my-custom.vim'
