@@ -13,6 +13,6 @@ that makes this distro super fast.
 ## Copy/Paste easy install (OS X)
 
 ```sh
-git clone https://github.com/brodock/janus-plugged.git ~/.config/nvim
+git clone https://github.com/wagnertrindades/janus-plugged.git ~/.config/nvim
 nvim +PlugInstall +qall
 ```
