@@ -1,5 +1,6 @@
 " Config deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 let g:deoplete#enable_at_startup = 1
 
 " Neomake
@@ -7,7 +8,10 @@ let g:neomake_ruby_rubocop_maker = {
       \ 'args': ['--verbose'],
       \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
       \ }
-let g:neomake_ruby_enabled_makers = ['rubocop']
+let g:neomake_ruby_enabled_makers = ['rubocop', 'reek']
+autocmd! BufReadPost,BufWritePost * Neomake
+" let g:neomake_error_sign = { 'text': 'X', 'texthl':'NeomakeErrorMsg' }
+" let g:neomake_warning_sign = { 'text': '!', 'texthl':'NeomakeErrorMsg' }
 
 " Limit column
 set colorcolumn=100
@@ -41,3 +45,10 @@ nnoremap <C-l> <C-w>l""
 " Backup an swap files
 set backupdir^=~/.vim/_backup//    " where to put backup files.
 set directory^=~/.vim/_temp//      " where to put swap files.
+
+" Add copy to clipboard
+set clipboard+=unnamedplus
+
+" Configure autopairs
+let g:AutoPairsFlyMode = 0
+let g:AutoPairsShortcutBackInsert = '<M-b>'

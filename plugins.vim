@@ -6,7 +6,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-endwise'
-Plug 'ctrlpvim/ctrlp.vim', { 'commit': 'f6c587e408dc0b45ffbabdadbb19739f8429e1eb' } "see: https://github.com/ctrlpvim/ctrlp.vim/issues/235
+Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'jeetsukumaran/vim-buffergator'
@@ -17,6 +17,7 @@ Plug 'rking/ag.vim'
 Plug 'benekastah/neomake'
 Plug 'scrooloose/syntastic'
 Plug 'ervandew/supertab'
+Plug 'auto-pairs-gentle'
 
 " Languages support
 Plug 'tpope/vim-haml', { 'for': 'haml' }
@@ -25,6 +26,8 @@ Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'tpope/vim-rails'
 Plug 'brodock/vim-vroom', { 'branch': 'neovim-terminal' }
 Plug 'thoughtbot/vim-rspec'
+Plug 'mattn/emmet-vim'
+Plug 'ap/vim-css-color'
 
 " Autocomplete (requires python 3)
 function! DoRemote(arg)
@@ -33,5 +36,6 @@ endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 
 " Themes
-Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'morhetz/gruvbox'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'dracula/vim'
