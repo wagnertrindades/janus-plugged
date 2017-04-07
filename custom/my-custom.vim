@@ -15,6 +15,7 @@ autocmd! BufReadPost,BufWritePost * Neomake
 
 " Limit column
 set colorcolumn=100
+set cursorline
 
 
 " Management tabs

@@ -28,6 +28,8 @@ Plug 'brodock/vim-vroom', { 'branch': 'neovim-terminal' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'mattn/emmet-vim'
 Plug 'ap/vim-css-color'
+Plug 'AndrewRadev/switch.vim'
+Plug 'AndrewRadev/splitjoin.vim'
 
 " Autocomplete (requires python 3)
 function! DoRemote(arg)
