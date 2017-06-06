@@ -13,11 +13,11 @@ Plug 'jeetsukumaran/vim-buffergator'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'ddollar/nerdcommenter'
 Plug 'tpope/vim-eunuch'
-Plug 'rking/ag.vim'
 Plug 'benekastah/neomake'
 Plug 'scrooloose/syntastic'
 Plug 'ervandew/supertab'
 Plug 'auto-pairs-gentle'
+Plug 'mileszs/ack.vim'
 
 " Languages support
 Plug 'tpope/vim-haml', { 'for': 'haml' }
@@ -30,6 +30,10 @@ Plug 'mattn/emmet-vim'
 Plug 'ap/vim-css-color'
 Plug 'AndrewRadev/switch.vim'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'alvan/vim-closetag'
+Plug 'disusered/node-neovim-plugin'
+Plug 'moll/vim-node'
+Plug 'fatih/vim-go'
 
 " Autocomplete (requires python 3)
 function! DoRemote(arg)

@@ -12,6 +12,8 @@ let g:neomake_ruby_enabled_makers = ['rubocop', 'reek']
 autocmd! BufReadPost,BufWritePost * Neomake
 " let g:neomake_error_sign = { 'text': 'X', 'texthl':'NeomakeErrorMsg' }
 " let g:neomake_warning_sign = { 'text': '!', 'texthl':'NeomakeErrorMsg' }
+"
+let g:neomake_javascript_enabled_makers = ['eslint']
 
 " Limit column
 set colorcolumn=100
