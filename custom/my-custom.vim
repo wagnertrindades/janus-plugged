@@ -55,3 +55,7 @@ set clipboard+=unnamedplus
 " Configure autopairs
 let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutBackInsert = '<M-b>'
+
+""" FZF fuzzy search
+noremap <C-p> :GFiles<CR>
+inoremap <C-p> <Esc>:GFiles<CR>

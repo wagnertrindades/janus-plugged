@@ -6,7 +6,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-endwise'
-Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'jeetsukumaran/vim-buffergator'
@@ -17,7 +16,9 @@ Plug 'benekastah/neomake'
 Plug 'scrooloose/syntastic'
 Plug 'ervandew/supertab'
 Plug 'auto-pairs-gentle'
-Plug 'mileszs/ack.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
+Plug 'junegunn/fzf.vim'
+Plug 'wakatime/vim-wakatime'
 
 " Languages support
 Plug 'tpope/vim-haml', { 'for': 'haml' }
