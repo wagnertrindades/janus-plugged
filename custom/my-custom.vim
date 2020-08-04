@@ -1,6 +1,3 @@
-" Config deoplete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
 let g:deoplete#enable_at_startup = 1
 
 " Neomake
@@ -59,3 +56,13 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 """ FZF fuzzy search
 noremap <C-p> :GFiles<CR>
 inoremap <C-p> <Esc>:GFiles<CR>
+
+" Configure Indent Line
+let g:indentLine_color_term = 239
+let g:indentLine_concealcursor = 'inc'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_conceallevel = 2
+let g:indentLine_enabled = 1
+
+" Relative lines in code
+set relativenumber
