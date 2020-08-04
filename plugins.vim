@@ -15,10 +15,11 @@ Plug 'tpope/vim-eunuch'
 Plug 'benekastah/neomake'
 Plug 'scrooloose/syntastic'
 Plug 'ervandew/supertab'
-Plug 'auto-pairs-gentle'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 Plug 'wakatime/vim-wakatime'
+Plug 'jiangmiao/auto-pairs'
+Plug 'Yggdroot/indentLine'
 
 " Languages support
 Plug 'tpope/vim-haml', { 'for': 'haml' }
@@ -32,15 +33,25 @@ Plug 'ap/vim-css-color'
 Plug 'AndrewRadev/switch.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'alvan/vim-closetag'
-Plug 'disusered/node-neovim-plugin'
 Plug 'moll/vim-node'
 Plug 'fatih/vim-go'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
 
-" Autocomplete (requires python 3)
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
+
+" Prettier JS
+Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " Themes
 " Plug 'morhetz/gruvbox'

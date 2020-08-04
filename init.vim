@@ -1,5 +1,9 @@
 let s:path = expand('<sfile>:p:h')
 
+" Python local
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
+
 " Load vim-enabled plugins from plugins.vim file
 call plug#begin(s:path . '/plugged')
 exe 'source ' . s:path . '/plugins.vim'
