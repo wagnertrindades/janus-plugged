@@ -1,5 +1,8 @@
 let g:deoplete#enable_at_startup = 1
 
+" Define leader to space
+let mapleader = ' '
+
 " Neomake
 let g:neomake_ruby_rubocop_maker = {
       \ 'args': ['--verbose'],
@@ -15,7 +18,6 @@ let g:neomake_javascript_enabled_makers = ['eslint']
 " Limit column
 set colorcolumn=100
 set cursorline
-
 
 " Management tabs
 nnoremap <C-t> :tabnew<cr>
@@ -40,7 +42,7 @@ nnoremap <leader>s <C-w>s<C-w>j
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l""
+nnoremap <C-l> <C-w>l
 
 " Backup an swap files
 set backupdir^=~/.vim/_backup//    " where to put backup files.
@@ -66,3 +68,9 @@ let g:indentLine_enabled = 1
 
 " Relative lines in code
 set relativenumber
+
+" Config to gruvbox theme
+let g:gruvbox_contrast_dark = 'hard'
+
+" Configure easymotion
+nmap <leader>gt <Plug>(easymotion-s2)

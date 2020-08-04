@@ -20,6 +20,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'wakatime/vim-wakatime'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine'
+Plug 'easymotion/vim-easymotion'
 
 " Languages support
 Plug 'tpope/vim-haml', { 'for': 'haml' }
@@ -54,6 +55,8 @@ let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " Themes
-" Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 " Plug 'vim-airline/vim-airline-themes'
-Plug 'dracula/vim'
+" Plug 'dracula/vim'
+" Plug 'kyoz/purify'
+" Plug 'joshdick/onedark.vim'
