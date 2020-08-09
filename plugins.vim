@@ -21,6 +21,7 @@ Plug 'wakatime/vim-wakatime'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
+Plug 'ryanoasis/vim-devicons'
 
 " Languages support
 Plug 'tpope/vim-haml', { 'for': 'haml' }
@@ -39,6 +40,7 @@ Plug 'fatih/vim-go'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'Galooshi/vim-import-js'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
